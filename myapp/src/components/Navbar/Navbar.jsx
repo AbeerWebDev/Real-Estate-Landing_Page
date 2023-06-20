@@ -21,23 +21,27 @@ const Navbar = () => {
           <span className="text">ALH PROPERTIES</span>
         </div>
         <div className="links">
-          <button onClick={()=> setOpen(!open)}>BROCHURE
-          {open && <div className="options">
-            
-          </div>
-          }
+          <button onClick={() => setOpen(!open)}>
+            BROCHURE
+            {open && (
+              <div className="options">
+                <input placeholder="username" />
+                <input type="password" placeholder="password" />
+               <button>Download</button>
+              </div>
+            )}
           </button>
         </div>
       </div>
-      { active && (
+      {active && (
         <>
-        <hr />
-        <div className="menu">
-          <span>About</span>
-          <span>Developer</span>
-          <span>Location</span>
-        </div>
-      </>
+          <hr />
+          <div className="menu">
+            <span>About</span>
+            <span>Developer</span>
+            <span>Location</span>
+          </div>
+        </>
       )}
     </div>
   );
