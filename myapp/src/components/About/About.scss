@@ -83,8 +83,24 @@
 
 
         .left {
-            margin-top: 0;
+            margin: 10px;
+            margin-left: 15px;
             height: 10%;
+
+            h1 {
+                margin-top: 10px;
+                font-size: 26px;
+                padding-left: 0px;
+            }
+
+            p {
+                text-align: justify;
+            }
+
+            button {
+                margin-bottom: 30px;
+                margin-left: 10px;
+            }
         }
 
         .right {
@@ -92,6 +108,7 @@
             img {
                 height: 100%;
                 width: 100%;
+                margin-top: -75px;
             }
         }
     }
