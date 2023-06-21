@@ -2,6 +2,7 @@ import React from "react";
 import "./Developer.scss";
 import { useEffect, useRef } from "react";
 import { TweenMax } from "gsap/all";
+import { scroller } from "react-scroll";
 
 const Developer = () => {
   const developerRef = useRef(null);
@@ -43,6 +44,15 @@ const Developer = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId, offset) => {
+    scroller.scrollTo(sectionId, {
+      smooth: true,
+      duration: 500,
+      offset: offset,
+    });
+  };
+
+
   return (
     <div className="developer" id="developer" ref={developerRef}>
       <div className="wrapper">
@@ -60,7 +70,9 @@ const Developer = () => {
             the UAE. With a strong focus on innovation and quality, ELIE SAAB
             has established itself as a trusted name in the industry.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => scrollToSection("contact", -300)}>
+            Learn More
+          </button>
         </div>
       </div>
     </div>

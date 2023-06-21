@@ -60,7 +60,7 @@ const Contact = () => {
     }
 
   return (
-    <div className="contact" ref={contactRef}>
+    <div className="contact" id="contact" ref={contactRef}>
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <h1>CONSULTATION</h1>

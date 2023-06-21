@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./Navbar.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
-
+import { scroller } from "react-scroll";
 
 const Navbar = () => {
   const [active, setActive] = useState(false);
@@ -36,17 +35,14 @@ const Navbar = () => {
     }, 3000);
   };
 
-  const stopPropagation = (event) => {
-    event.stopPropagation();
-  };
+const scrollToSection = (sectionId, offset) => {
+  scroller.scrollTo(sectionId, {
+    smooth: true,
+    duration: 500,
+    offset: offset,
+  });
+};
 
-  const scrollToAbout = () => {
-    scroll.scrollTo("about", {
-      smooth: true,
-      duration: 500,
-      offset: -50, // Adjust the offset as needed to position the section correctly
-    });
-  };
 
   return (
     <div className={active ? "navbar active" : "navbar"}>
@@ -97,36 +93,13 @@ const Navbar = () => {
         <>
           <hr />
           <div className="menu">
-            <Link
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              onClick={scrollToAbout}
-            >
-              <span>About</span>
-            </Link>
-            <Link
-              to="developer"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              onClick={scrollToAbout}
-            >
-              <span>Developer</span>
-            </Link>
-            <Link
-              to="location"
-              spy={true}
-              smooth={true}
-              offset={-50}
-              duration={500}
-              onClick={scrollToAbout}
-            >
-              <span>Location</span>
-            </Link>
+            <span onClick={() => scrollToSection("about", -280)}>About</span>
+            <span onClick={() => scrollToSection("developer", -440)}>
+              Developer
+            </span>
+            <span onClick={() => scrollToSection("location", -500)}>
+              Location
+            </span>
           </div>
         </>
       )}

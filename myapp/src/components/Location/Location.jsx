@@ -2,6 +2,7 @@ import React from "react";
 import "./Location.scss";
 import { useEffect, useRef } from "react";
 import { TweenMax } from "gsap/all";
+import { scroller } from "react-scroll";
 
 const Location = () => {
   const locationRef = useRef(null);
@@ -35,6 +36,15 @@ const Location = () => {
     };
   }, []);
 
+  const scrollToSection = (sectionId, offset) => {
+    scroller.scrollTo(sectionId, {
+      smooth: true,
+      duration: 500,
+      offset: offset,
+    });
+  };
+
+
   return (
     <div className="location" id="location" ref={locationRef}>
       <div className="wrapper">
@@ -46,7 +56,9 @@ const Location = () => {
             and world-class golf courses, it offers a luxurious and serene
             lifestyle for residents.
           </p>
-          <button>Learn More</button>
+          <button onClick={() => scrollToSection("contact", -300)}>
+            Learn More
+          </button>
         </div>
         <div className="right" ref={rightRef}>
           <img

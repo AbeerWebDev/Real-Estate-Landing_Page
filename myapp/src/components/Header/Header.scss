@@ -31,3 +31,26 @@
     }
 
 }
+
+@media screen and (max-width: 768px) {
+
+    .header {
+        overflow: hidden;
+        width: 100%;
+        object-fit: cover;
+
+        h1 {
+            font-size: 20px;
+            left: 0;
+            padding-left: 80px;
+
+        }
+
+        h3 {
+            font-size: 20px;
+            left: 0;
+            padding-left: 170px;
+            padding-top: 50px;
+        }
+    }
+}

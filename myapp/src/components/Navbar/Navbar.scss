@@ -130,3 +130,28 @@ $hover: #7b90d3;
         cursor: pointer;
     }
 }
+
+@media screen and (max-width: 768px) { 
+    .navbar {
+        overflow: hidden;
+        width: 100%;
+
+        .container {
+            width: 100%;
+            justify-content: center;
+        }
+
+        .links {
+            display: none;
+        }
+
+        button {
+            display: none;
+        }
+
+        .menu {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}

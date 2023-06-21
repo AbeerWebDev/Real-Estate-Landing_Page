@@ -2,6 +2,7 @@ import React from 'react'
 import './About.scss'
 import { useEffect, useRef } from "react";
 import { TweenMax } from "gsap/all";
+import { scroller } from "react-scroll";
 
 
 const About = () => {
@@ -36,10 +37,17 @@ const About = () => {
     };
   }, []);
 
+const scrollToSection = (sectionId, offset) => {
+  scroller.scrollTo(sectionId, {
+    smooth: true,
+    duration: 500,
+    offset: offset,
+  });
+};
 
 
   return (
-    <div className="about" id='about' ref={aboutRef}>
+    <div className="about" id="about" ref={aboutRef}>
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <h1>ABOUT THE PROJECT</h1>
@@ -65,7 +73,9 @@ const About = () => {
               alt=""
             />
           </div>
-          <button>Learn More</button>
+          <button onClick={() => scrollToSection("contact", -300)}>
+            Learn More
+          </button>
         </div>
         <div className="right" ref={rightRef}>
           <img
