@@ -79,7 +79,7 @@ const scrollToSection = (sectionId, offset) => {
         </div>
         <div className="right" ref={rightRef}>
           <img
-            src="https://uc7e1a62f2909403ac27038a08e9.previews.dropboxusercontent.com/p/thumb/AB91BydsYvzceuqDQFLII2Cl6kHH7iBkrIWHPBPWsF0hMQrTrhiat7IU38I3oTl3fAFdG2Z1BfXPOCDz9LmMuaZrH5uqg25iMYjrRKU3GNemfsftkW8aWdrfol9tqjhMIWloSon374efBictGJzZrXhPmlw1DpPJFG2Hskv4COJmF17w5eZK6KHFDF-FLhkzVE56jrezU9DzGNC_VdoZMyIONtg-JEoXaeCjESZJw6fJS1y6BtVmR652qBiv5g8lQXooaGN-3du3dL7Ykw2uu7E_uXd2xxJbsuZTZeoOOa_JsZkAd9HMROa_n4CQRuNwdha3SvPONPysG1gsMQlWWRszC449c0TYvG3xgXmaUbgQcQk116RM4XE0TUn83LvGajemzsRrNwQerogg152rKq-tLpEg4M2X4vt8LWVcxqbF_aE75WJkIXeeyy0NcABBz80qM9N6jPL_8_6fVy7bNfohJln3zs_UiDsj_1eRRSFt-74nGWr5iSpyrc8W9PG9PnM/p.jpeg"
+            src="https://uc7e1a62f2909403ac27038a08e9.previews.dropboxusercontent.com/p/thumb/AB-3pNiMtQ9tjT64PFr731wH1PbmbSayIYlfLrYmI9ds3BxvMHqUIQ3Okz09PwQqRyfBC7pvR1WLr5j5DGIR-qjhkZlAyTaiV2cEiN5kX1wjsaq7W-GIHoeAb_nkzzIPg6VYxYabd_Lm48E7BUYJb9eGXWUafrueuX7ie5eqrAcMGOcykDJ9LvtfGpN9kOBywptXYZmVZ7FbKYnOILfNfMQiRsVv6CGKQsy4madY2YR5QGZ7PL7jefTG-MSDJ1GrStCdKRkgdrBBzKnLEU4u-BNaOHdfKsDPcqoF_9Kr1zNqPT1g1WuLjDDVpjPKTqlkVB40hVZz-nmzgMjwPlGTwQv4t0dB-JO5MIrwb032gwHSPjW9h_3cwpNpoVf15tCicoOQsnetjm178oInRiuXGOH7esyRHDDPA-nZ7KF56Z6w86LpqTRPghwcq7tR3HyNshBG1R_atIU-3mCPdfmq-8UNGn6l2bg7lNufO6Wb4JKDL_Czhn5W-fuZgIyH5koxOtw/p.jpeg"
             alt=""
           />
         </div>

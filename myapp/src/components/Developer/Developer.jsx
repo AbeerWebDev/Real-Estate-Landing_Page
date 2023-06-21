@@ -58,7 +58,7 @@ const Developer = () => {
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <img
-            src="https://uc001c4d11e52d57de987dbe71d3.previews.dropboxusercontent.com/p/thumb/AB_mWm1A2psGV0rw3D7--fmQQU1lH45VmuL7121vy_hVsdrCcwWNIdQIvYIv1jX0ArOvQPXZ2jEM7491_nitwOZmKZPPA64VJ3rnBhbWIrVSDqyJ9J9JrVSWKueGU11ch0XqiAEHw2Fw6s3I_hqgnu38bYtywg1_l3ntBPhUrrlRz9_qAH3uZTAdTPUqf8Pxwqj64M2RP3V2Bqa4d36WMKrhltZSDDjVHrsqF6ofde9pqQg1UVGugLkGBD3LoBJccdSbSUnGaPg0pLTWK8Ia7OJhOKE0Nt2u_wN0beOmGCJ3B6cNJNUxrhPS1EuxsrYNwgZtGzF0KISSNXY31E66hYKdT6vhD9VAj7mSEDbsuXiNXHkOuV9c-4iIcNQSJOLKg7usqelkoJ0_1hNakPCY6ptgInpnWA_feYTNlC2bWqooG67wpenkeCx0sZoQFA7sPZ5MXINSEiglgi7rMLyyySZNp9YDDZFlLO_fj_EuVTeWU-9JV8_lVa_W3QzABuQkQus/p.jpeg"
+            src="https://uc001c4d11e52d57de987dbe71d3.previews.dropboxusercontent.com/p/thumb/AB9jT7n4_Q4SFVaQ8vPpjnhpxpY4373ctfNogfALOCvHtARUA-OuMJrdlSdiEw7mNSWgUiSkWHcSkUK-livjERMkxfemk_U4whCCr8uxAioOVYu_ruLxiPoKTk8H6AfRihQuWWfYd204yEU6HnvglDKCTkudh6RFVLUKbClyrrgNKv3BImrDdNXoGeCKW0NTv6eHRh3kODxQRsDbeqlRl-0YU-RerXzuL1QpYI_2konnMTSMbkbmr5PF9KlHnpqOfIUgPANwXm4YtPLSy-Z_MavwJ4rKF1RZKTTXso7oPqT3xubm9NGjz34rz9s5nVs-Tf0UDNluon7M6hFUfGvbFZBE1-f_bHDqdGPyGloVVMkjT-SZq5491p0Tc7MN-POuwQVur-_Nmfl2vhSayCRiF6KNB6fizgZtkgXYCyh-bkW0SmyeDuoGF9w-4PAEmy-PSHQ2K_tts8tDGUWJw51JCjNYwoALh_GvDnFn01DoPiNNwKQKPrDHWBgMvlEJDil6jiU/p.jpeg"
             alt=""
           />
         </div>

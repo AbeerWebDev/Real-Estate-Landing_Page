@@ -56,13 +56,13 @@ const Location = () => {
             and world-class golf courses, it offers a luxurious and serene
             lifestyle for residents.
           </p>
-          <button onClick={() => scrollToSection("contact", -300)}>
+          <button onClick={() => scrollToSection("contact", -400)}>
             Learn More
           </button>
         </div>
         <div className="right" ref={rightRef}>
           <img
-            src="https://uc5ff1667436b23fc6fde6bd283d.previews.dropboxusercontent.com/p/thumb/AB-EcjldGVWvvt0HhNWQPgMQEuTF5UJsjjIp8K_2_qlswG88uF1iMBryOa7Zywxeo3enk2hXHu6aeX1eKTI3yPCAeYK9s9cvvy5DFTSVHcTzulbfRwvxoSHkv6yhSanuFcdA15v0CgDS4ELJ96sJlNJkg96utK9ksFte1K32_GSOClp3aoCqNguWGDhc5BGZG4LDz9YKT-4XxzXUUq3U-XMGcODAMs4mQOVsVv1AhCksWULkY6ISBMNc62gStcBpGyhLYv5JFeF3JsiTdMXqDvtVCHPM0vi9ZSV7eugyotIgr14vFC38T2S8pP1W_B9M-l9DIJEWkKSCwEIzLb1wzIjBbfDL3lCmFjyn2f7x9aJlxhTO42RI5_T1-Y1U9gKfSwbsv25czVKxYCw_C52WKpk-XlrIuEEIVF-3cP24hhlGBLsJdw8PpI0zQ9HrTFr6y4NWosFlT0rwZ4C040ilbtXA0wKb4dlSRFPDhba_b2hP19aaITaRnYyfcu7n8LJybiQ/p.jpeg"
+            src="https://uc5ff1667436b23fc6fde6bd283d.previews.dropboxusercontent.com/p/thumb/AB_JAq7n7g0riad55O0O0TWoE-yujdZdpYTc_HTfMy3YDei5AuixXSEOP3jEgXzNATEmRHMwk1ibDITEv_v87-aWiSVyw8DPUSYqZbrSm6_Wrs_LTqD1Mc3Y4nutSa8xn7fCyvXCKcIFCd7-dMioyq64zPXbqVGplvxr0ovkR9JVy4gYVExhaKMkfOWFDeVrTcLSOAr4dcVQ1CNXzRT0QDsmbQi5O9rS5l4Yy77fActQNA2woLzqOtsali7Z-RTgFnJitO2YbM-F_IoxtkAt3pFcj1qtnlK08S2JGtphDA70JfQWqNfjVeG2WnQOctIbJRf1Q5NDJZDtvrLtAXml6fGhs8xlHLPmyhBMsX5kN-c8KcKxIQkoJ_R1b3Dlv-e7tMptaDE1E15FyuX_FZ9GsGQifI0VVxPmE4XWDxCnP-O6E6O_In6TyNdLUkGUhRYHLtn9zZMCNTK7nAwJ-OD2WFQkddbka_T3pYDs4R1yMhMLpVln1mmh-LvHWSTOeE4rOuI/p.jpeg"
             alt=""
           />
         </div>
