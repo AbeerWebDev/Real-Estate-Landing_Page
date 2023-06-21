@@ -76,7 +76,7 @@
 }
 
 @media screen and (max-width: 768px) { 
-
+.about {
     .wrapper {
         display: flex;
         flex-direction: column;
@@ -88,9 +88,12 @@
         }
 
         .right {
+            flex: 0.5;
             img {
-                height: 30%;
+                height: 100%;
+                width: 100%;
             }
         }
     }
+}
 }
