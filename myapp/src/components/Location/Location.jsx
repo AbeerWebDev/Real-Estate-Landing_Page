@@ -36,7 +36,7 @@ const Location = () => {
   }, []);
 
   return (
-    <div className="location" ref={locationRef}>
+    <div className="location" id="location" ref={locationRef}>
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <h1>WHERE TO FIND US</h1>

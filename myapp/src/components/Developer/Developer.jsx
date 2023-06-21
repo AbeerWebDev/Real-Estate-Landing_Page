@@ -44,7 +44,7 @@ const Developer = () => {
   }, []);
 
   return (
-    <div className="developer" ref={developerRef}>
+    <div className="developer" id="developer" ref={developerRef}>
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <img

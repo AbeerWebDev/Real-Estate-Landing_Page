@@ -39,7 +39,7 @@ const About = () => {
 
 
   return (
-    <div className="about" ref={aboutRef}>
+    <div className="about" id='about' ref={aboutRef}>
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <h1>ABOUT THE PROJECT</h1>
