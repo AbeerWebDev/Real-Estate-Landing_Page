@@ -1,14 +1,11 @@
 import React from 'react'
 import './About.scss'
 import { useEffect, useRef } from "react";
-import { Controller, Scene } from "scrollmagic";
 import { TweenMax } from "gsap/all";
 
-const About = () => {
 
-  const controller = useRef(new Controller());
-  const leftScene = useRef(null);
-  const rightScene = useRef(null);
+const About = () => {
+  const aboutRef = useRef(null);
   const leftRef = useRef(null);
   const rightRef = useRef(null);
 
@@ -16,13 +13,15 @@ const About = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const windowHeight = window.innerHeight;
-      const scrollThreshold = windowHeight * 0.8; // Adjust the threshold as desired
+      const scrollThreshold = windowHeight * 0.6; // Adjust the threshold as desired
 
       if (scrollPosition > scrollThreshold) {
         const distanceFromThreshold = scrollPosition - scrollThreshold;
+        const aboutOffset = -(distanceFromThreshold * 0.9); // Adjust the parallax effect as desired
         const leftOffset = -(distanceFromThreshold * 0.5);
         const rightOffset = -(distanceFromThreshold * 0.3);
 
+        TweenMax.set(aboutRef.current, { y: aboutOffset });
         TweenMax.set(leftRef.current, { y: leftOffset });
         TweenMax.set(rightRef.current, { y: rightOffset });
       }
@@ -38,8 +37,9 @@ const About = () => {
   }, []);
 
 
+
   return (
-    <div className="about">
+    <div className="about" ref={aboutRef}>
       <div className="wrapper">
         <div className="left" ref={leftRef}>
           <h1>ABOUT THE PROJECT</h1>
@@ -69,7 +69,7 @@ const About = () => {
         </div>
         <div className="right" ref={rightRef}>
           <img
-            src="https://uc7e1a62f2909403ac27038a08e9.previews.dropboxusercontent.com/p/thumb/AB-weNPZQr-LK5-lKKFnC_5cSaGMT9xFiDYcoD7b5aPAGBLdCnWGCFYyA582QFUqoDHxNRPb5i66Xruf6eVijk3jqjj7U7LLuh_W6tUS9XIQDgSYnxLqNbj40YRRmGeW4cD_Yi91GzARbj-Wxi1qoiSbIkv9EaW-vY6MNJ6AonJtE-xn02M7--4VaZG7tozdgxMXZs1DzTy-BPFbLvI2ckfElv9oue3STx1eROhpUw-1xQVjgT0ALomMxa_-No2UUGbySQVh93dIP3fHMBf-UfO3pRADVs--u2LJmtKdNJG5VK5GvYp4k5zTY_VvWjwmDbKpPNcNDocldAIN1WAijaTE9WaghANxSVujaYAzSx-Ou-8DeiQ7d-75q968JGLpWepJlOwX5fBQRZpTbrfDwv8eUqlalNPHxvYq4fPW07665wIXwRuDlAfml1YgT8PzksjUtDDZhe2LM0pYsGy5ClCQGnaxxIXRo14AAtcz6seeyFvO2MPHsnKKHB-IGYFU37A/p.jpeg"
+            src="https://uc7e1a62f2909403ac27038a08e9.previews.dropboxusercontent.com/p/thumb/AB91BydsYvzceuqDQFLII2Cl6kHH7iBkrIWHPBPWsF0hMQrTrhiat7IU38I3oTl3fAFdG2Z1BfXPOCDz9LmMuaZrH5uqg25iMYjrRKU3GNemfsftkW8aWdrfol9tqjhMIWloSon374efBictGJzZrXhPmlw1DpPJFG2Hskv4COJmF17w5eZK6KHFDF-FLhkzVE56jrezU9DzGNC_VdoZMyIONtg-JEoXaeCjESZJw6fJS1y6BtVmR652qBiv5g8lQXooaGN-3du3dL7Ykw2uu7E_uXd2xxJbsuZTZeoOOa_JsZkAd9HMROa_n4CQRuNwdha3SvPONPysG1gsMQlWWRszC449c0TYvG3xgXmaUbgQcQk116RM4XE0TUn83LvGajemzsRrNwQerogg152rKq-tLpEg4M2X4vt8LWVcxqbF_aE75WJkIXeeyy0NcABBz80qM9N6jPL_8_6fVy7bNfohJln3zs_UiDsj_1eRRSFt-74nGWr5iSpyrc8W9PG9PnM/p.jpeg"
             alt=""
           />
         </div>

@@ -2,9 +2,9 @@ import './Header.scss'
 
 const Header = () => {
   return (
-    <div className="header">
+    <div className="header" >
       <img
-        src="https://uc20c401df0f316f08d09de56431.previews.dropboxusercontent.com/p/thumb/AB-eOrAaE3qWsEab-fhPYq0ZBkj5_Q91uGEjfgB53vb94imWaNRyZXlBRAJm4i9yqKUmenlgVXgT2Zo0P8vim1neEV1l45K4oKuXo5492Hal7UquE8PkYg18QBP3LgjRZmRVNfaR0BZkwajBe76HxQaM2GKjzeBhLZqSB6ESyCLS7GKszYWXNnsoEOsoY4zv6tcfWuOo_221BYGKWof7xebyPRvNE8fTZSpkllttFNM6ZCOdxA98jlz_ohzZvukQKlTTZjo-ZaB8fzY2coCT2H-bEdpoPYKBeIjrVCZY9MlDLrGMK8W68ZMjWNot545xkBScBjch7LBwnjE3KkNinlT9LLjSgodqBteimEnLTv_ZiqYpsvDmyPph95YlC_XKpKw/p.jpeg"
+        src="https://uc20c401df0f316f08d09de56431.previews.dropboxusercontent.com/p/thumb/AB95W59y0_xIeQxmNwm68gA7L9pNazYMvgwtcvXu8yJUVcdx8OUUySqRIKaCIFr5bpUcipvACgicas1XyQAi6p_4Yz0ec7PX-ByniVUL8mCpK1MemnKNsukR_cWJ3thaAMY9PfxJveH3gHQRlHqKhpEYJcc1zRH2C44TZN9nLiW5QPt8UKDFACE03aMvnC6G30BSagkAfif0OeqtWf6VXLC7Xazv9KeeaEmtCSaqTDEvHXJsucN9wVdBT-wUP0eIikdGl1z5nOyp-D4qGfqttbZt5wRlAVs_lfgr4FfYFl3c1y-VlvNsJwR-gUpb-Xefd6sY_jb5SSTryZlchJLLX4HQWz7zQgulkRLTc8e3kW8R_KVCxXVPwOJ-Z1j-HpjUYi4/p.jpeg"
         alt=""
       />
     </div>

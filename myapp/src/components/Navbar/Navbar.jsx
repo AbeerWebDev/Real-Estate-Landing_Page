@@ -14,28 +14,31 @@ const Navbar = () => {
       window.removeEventListener('scroll', isActive)
     }
   })
+
+
   return (
     <div className={active ? "navbar active" : "navbar"}>
       <div className="container">
         <div className="logo">
-          <span className="text">ALH PROPERTIES</span>
+          <span className="text">ELIE SAAB</span>
         </div>
         <div className="links">
-          <button onClick={() => setOpen(!open)}>BROCHURE
-          {open && (
-            <div className="options">
-              <h1>ELIE SAAB BROCHURE</h1>
-              <div className="plans">
-                <span>Masterplan</span>
-                <span>Lifestyle</span>
-                <span>Gallery</span>
-                <span>Floor Plans</span>
+          <button onClick={() => setOpen(!open)}>
+            BROCHURE
+            {open && (
+              <div className="options">
+                <h1>ELIE SAAB BROCHURE</h1>
+                <div className="plans">
+                  <span>Masterplan</span>
+                  <span>Lifestyle</span>
+                  <span>Gallery</span>
+                  <span>Floor Plans</span>
+                </div>
+                <input placeholder="Name" />
+                <input type="email" placeholder="Email" />
+                <button className="download">Download</button>
               </div>
-              <input placeholder="Name" />
-              <input type="email" placeholder="Email" />
-              <button className="download">Download</button>
-            </div>
-          )}
+            )}
           </button>
         </div>
       </div>
@@ -43,9 +46,15 @@ const Navbar = () => {
         <>
           <hr />
           <div className="menu">
-            <span>About</span>
-            <span>Developer</span>
-            <span>Location</span>
+            <span>
+              About
+            </span>
+            <span>
+              Developer
+            </span>
+            <span>
+              Location
+            </span>
           </div>
         </>
       )}
